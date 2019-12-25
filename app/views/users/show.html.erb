@@ -1,0 +1,9 @@
+<h1>Пользователь: <%= @user.name %></h1>
+
+<p><strong>E-mail:</strong> <%= @user.email %></p>
+
+<p>
+  <%= link_to 'Редактировать пользователя', edit_user_path(@user) %> |
+  <%= link_to 'Удалить пользователя', user_path(@user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' } %> |
+  <%= link_to 'Все пользователи', users_path %>
+</p>

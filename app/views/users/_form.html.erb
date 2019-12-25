@@ -1,0 +1,17 @@
+<%= form_for @user do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+
+  <p>
+    <%= f.label :email %>
+    <%= f.email_field :email %>
+  </p>
+
+  <p>
+    <%= f.submit 'Сохранить' %> |
+    <%= link_to 'Отмена', users_path %>
+  </p>
+
+<% end %>

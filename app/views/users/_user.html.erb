@@ -1,0 +1,1 @@
+<p><strong><%= link_to user.name, user_path(user) %></strong> <small>(<%= link_to 'Открыть профиль', user_path(user) %> | <%= link_to 'Редактировать', edit_user_path(user) %> | <%= link_to 'Удалить пользователя', user_path(user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' } %>)</small></p>
