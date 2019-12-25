@@ -2,6 +2,8 @@
 
 <p><strong>E-mail:</strong> <%= @user.email %></p>
 
+<p><%= image_tag @user.avatar.url(:title), class: 'img-show', alt: @user.name if @user.avatar? %></p>
+
 <p>
   <%= link_to 'Редактировать пользователя', edit_user_path(@user) %> |
   <%= link_to 'Удалить пользователя', user_path(@user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' } %> |
