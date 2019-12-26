@@ -1,27 +1,28 @@
 <%= form_for @user, html: { multipart: true } do |f| %>
-  <p>
-    <%= f.label :name %>
-    <%= f.text_field :name %>
-  </p>
+  <div class="field">
+    <label class="label"><%= f.label :name %></label>
+    <div class="control"><%= f.text_field :name %></div>
+  </div>
 
-  <p>
-    <%= f.label :email %>
+  <div class="field">
+    <label class="label"><%= f.label :email %></label>
     <%= f.email_field :email %>
-  </p>
+  </div>
 
-  <p>
-    <%= f.label :avatar, 'Загрузить аватар:' %><br />
-    <%= f.file_field :avatar %>
-  </p>
+  <div class="field">
+    <label class="label"><%= f.label :avatar, 'Загрузить аватар:' %></label>
+    <div class="control"><%= f.file_field :avatar %></div>
+  </div>
 
   <% if @user.avatar? %>
   <p><strong>Существующий аватар:</strong></p>
   <p><%= image_tag @user.avatar.url(:thumb), class: 'img-show', alt: @user.name %></p>
   <% end %>
 
-  <p>
-    <%= f.submit 'Сохранить' %> |
-    <%= link_to 'Отмена', users_path %>
-  </p>
+  <hr>
+  <div class="control">
+    <%= f.submit 'Сохранить', class: "button is-success" %>
+    <%= link_to 'Отмена', users_path, class: "button" %>
+  </div>
 
 <% end %>

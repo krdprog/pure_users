@@ -1,11 +1,11 @@
-<h1>Пользователь: <%= @user.name %></h1>
+<h2 class="title">Пользователь: <%= @user.name %></h2>
 
 <p><strong>E-mail:</strong> <%= @user.email %></p>
 
 <p><%= image_tag @user.avatar.url(:title), class: 'img-show', alt: @user.name if @user.avatar? %></p>
 
 <p>
-  <%= link_to 'Редактировать пользователя', edit_user_path(@user) %> |
-  <%= link_to 'Удалить пользователя', user_path(@user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' } %> |
-  <%= link_to 'Все пользователи', users_path %>
+  <%= link_to 'Редактировать пользователя', edit_user_path(@user), class: "button is-success" %>
+  <%= link_to 'Удалить пользователя', user_path(@user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' }, class: "button is-danger" %>
+  <%= link_to 'Все пользователи', users_path, class: "button is-link" %>
 </p>

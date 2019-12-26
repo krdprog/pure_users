@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>PureUsers</title>
+    <title>PureUsers Panel</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   </head>
 
   <body>
-    <%= yield %>
+
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        PureUsers Panel
+      </h1>
+      <p class="subtitle">
+        Панель управления пользователями
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <%= yield %>
+    </div>
+  </section>
+
+
   </body>
 </html>

@@ -1,7 +1,7 @@
-<h1>Пользователи</h1>
+<h2 class="title">Пользователи</h2>
 
 <%= 'Нет пользователей' if @users.empty? %>
 
-<p><%= link_to 'Создать пользователя', new_user_path %></p>
+<p><%= link_to 'Создать пользователя', new_user_path, class: "button is-link" %></p>
 
 <%= render @users %>
