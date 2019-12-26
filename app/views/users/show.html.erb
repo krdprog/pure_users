@@ -2,6 +2,8 @@
 
 <p><strong>E-mail:</strong> <%= @user.email %></p>
 
+<hr>
+
 <p><%= image_tag @user.avatar.url(:title), class: 'img-show', alt: @user.name if @user.avatar? %></p>
 
 <p>

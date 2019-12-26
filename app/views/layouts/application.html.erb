@@ -13,24 +13,25 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
 
-    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="/favicon.png" type="image/png">
   </head>
 
   <body>
 
-
-  <section class="section">
-    <div class="container">
-
-      <h1 class="title">
-        <img src="favicon.png" alt="PureUsers Panel" class="logo">
-        <%= link_to 'PureUsers Panel', root_path %>
-      </h1>
-      <p class="subtitle">
-        Панель управления пользователями
-      </p>
+  <section class="hero is-light is-bold">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          <%= image_tag "/favicon.png", class: "logo" %>
+          <%= link_to 'PureUsers Panel', root_path %>
+        </h1>
+        <p class="subtitle">
+          Панель управления пользователями
+        </p>
+      </div>
     </div>
   </section>
+
 
   <section class="section">
     <div class="container">

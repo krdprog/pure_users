@@ -1,7 +1,58 @@
-<% if user.avatar? %>
-<p>
-  <%= image_tag user.avatar.url(:thumb), class: 'img-show', alt: user.name %>
-</p>
-<% end %>
+<div class="box">
+  <article class="media">
+    <div class="media-left">
+      <figure class="image is-64x64">
+        <%= image_tag user.avatar.url(:thumb), class: 'img-show', alt: user.name %>
+      </figure>
+    </div>
+    <div class="media-content">
+      <div class="content">
+        <p>
+          <strong>Пользователь: <%= link_to user.name, user_path(user) %></strong>
+          <br>
+          <strong>E-mail:</strong> <%= user.email %>
+        </p>
+      </div>
+      <nav class="level is-mobile">
+        <div class="level-left">
 
-<p><strong><%= link_to user.name, user_path(user) %></strong> <small>(<%= link_to 'Открыть профиль', user_path(user) %> | <%= link_to 'Редактировать', edit_user_path(user) %> | <%= link_to 'Удалить пользователя', user_path(user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' } %>)</small></p>
+        <%= link_to(user_path(user), class: "level-item") do %>
+          <%= content_tag :span, '<i class="fas fa-id-card" aria-hidden="true"></i>'.html_safe, class: "icon is-small" %>
+          <%= content_tag :span, 'Открыть', class: "fa-text" %>
+        <% end %>
+
+        <%= link_to(edit_user_path(user), class: "level-item") do %>
+          <%= content_tag :span, '<i class="fas fa-user-edit" aria-hidden="true"></i>'.html_safe, class: "icon is-small" %>
+          <%= content_tag :span, 'Редактировать', class: "fa-text" %>
+        <% end %>
+
+        <%= link_to(user_path(user), method: :delete, data: { confirm: 'Вы уверены? Точно удалить?' }, class: "level-item") do %>
+          <%= content_tag :span, '<i class="fas fa-trash-alt" aria-hidden="true"></i>'.html_safe, class: "icon is-small" %>
+          <%= content_tag :span, 'Удалить', class: "fa-text" %>
+        <% end %>
+<!--           <a class="level-item" aria-label="reply">
+            <span class="icon is-small">
+              <i class="fas fa-id-card" aria-hidden="true"></i>
+            </span>
+            <span class="fa-text">Открыть</span>
+          </a> -->
+
+<!--           <a class="level-item" aria-label="retweet">
+            <span class="icon is-small">
+              <i class="fas fa-user-edit" aria-hidden="true"></i>
+            </span>
+            <span class="fa-text">Редактировать</span>
+          </a>
+
+          <a class="level-item" aria-label="like">
+            <span class="icon is-small">
+              <i class="fas fa-trash-alt" aria-hidden="true"></i>
+            </span>
+            <span class="fa-text">Удалить</span>
+          </a> -->
+
+        </div>
+      </nav>
+    </div>
+  </article>
+</div>

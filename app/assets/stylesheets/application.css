@@ -22,3 +22,14 @@
 .logo {
   vertical-align: bottom;
 }
+
+.fa-text {
+  position: relative;
+  padding-left: 10px;
+}
+
+@media (max-width: 767px) {
+  .fa-text {
+    display: none;
+  }
+}
