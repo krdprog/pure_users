@@ -5,5 +5,5 @@ ru:
         name: "Имя:"
         email: "Электронная почта:"
   will_paginate:
-    previous_label: 'Предыдущая'
-    next_label: 'Следующая'
+    previous_label: '&larr;'
+    next_label: '&rarr;'

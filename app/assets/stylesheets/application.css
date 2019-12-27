@@ -28,6 +28,28 @@
   padding-left: 10px;
 }
 
+.pagination {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.pagination a {
+  font-size: 1.3rem;
+  padding: 5px;
+}
+
+.pagination .current {
+  background-color: #7a7a7a;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 8px;
+}
+
+.pagination .previous_page, .pagination .next_page {
+  padding: 5px;
+}
+
 @media (max-width: 767px) {
   .fa-text {
     display: none;
