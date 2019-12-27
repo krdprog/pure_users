@@ -1,9 +1,23 @@
 ru:
+  errors:
+    messages:
+      extension_whitelist_error: "недопустимый формат загружаемого файла"
   activerecord:
     attributes:
       user:
-        name: "Имя:"
-        email: "Электронная почта:"
+        name: "Имя (*):"
+        email: "Электронная почта (*):"
+        avatar: "Аватар (*):"
+    errors:
+      models:
+        user:
+          attributes:
+            name:
+              blank: "не может быть пустым"
+            email:
+              blank: "не может быть пустым"
+            avatar:
+              blank: "не может быть пустым"
   will_paginate:
     previous_label: '&larr;'
     next_label: '&rarr;'
