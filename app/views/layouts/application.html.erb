@@ -18,20 +18,7 @@
 
   <body>
 
-  <section class="hero is-light is-bold">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-          <%= image_tag "/favicon.png", class: "logo" %>
-          <%= link_to 'PureUsers Panel', root_path %>
-        </h1>
-        <p class="subtitle">
-          Панель управления пользователями
-        </p>
-      </div>
-    </div>
-  </section>
-
+  <%= render 'layouts/header' %>
 
   <section class="section">
     <div class="container">
@@ -39,6 +26,7 @@
     </div>
   </section>
 
+  <%= render 'layouts/footer' %>
 
   </body>
 </html>
