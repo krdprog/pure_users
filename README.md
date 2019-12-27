@@ -1,24 +1,13 @@
-# README
+# Ruby on Rails приложение PureUsers
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**PureUsers Panel** &mdash; это панель управления пользователями.
 
-Things you may want to cover:
+### Внешний вид:
 
-* Ruby version
+**Список пользователей:**
 
-* System dependencies
+![список пользователей](readme/readme_01.png)
 
-* Configuration
+**Карточка пользователя:**
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+![карточка пользователя](readme/readme_02.png)
