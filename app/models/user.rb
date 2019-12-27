@@ -3,6 +3,8 @@ class User < ApplicationRecord
 
   mount_uploader :avatar, AvatarUploader
 
-  validates :name, :email, :avatar, presence: true
+  validates :name, :email, :avatar, :password, presence: true
   validates :email, uniqueness: { case_sensitive: true }
+
+  has_secure_password
 end

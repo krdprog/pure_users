@@ -2,6 +2,8 @@
 
 <p><strong>E-mail:</strong> <%= @user.email %></p>
 
+<p><strong>Пароль:</strong> <%= link_to 'обновить пароль', edit_user_path(@user) %></p>
+
 <hr>
 
 <p><%= image_tag @user.avatar.url(:title), class: 'img-show', alt: @user.name if @user.avatar? %></p>

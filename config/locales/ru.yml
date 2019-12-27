@@ -8,6 +8,8 @@ ru:
         name: "Имя (*):"
         email: "Электронная почта (*):"
         avatar: "Аватар (*):"
+        password: "Пароль (*):"
+        password_confirmation: "Подтверждение пароля (*):"
     errors:
       models:
         user:
@@ -19,6 +21,11 @@ ru:
               taken: "уже существует в системе"
             avatar:
               blank: "не может быть пустым"
+            password:
+              blank: "не может быть пустым"
+            password_confirmation:
+              blank: "не может быть пустым"
+              confirmation: "поля «Пароль» и «Подтверждение пароля» не совпадают"
   will_paginate:
     previous_label: '&larr;'
     next_label: '&rarr;'
