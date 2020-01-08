@@ -2,7 +2,7 @@
 
 **PureUsers Panel** &mdash; это панель управления пользователями.
 
-**Демо:** [https://pure-users-2020.herokuapp.com/](https://pure-users-2020.herokuapp.com/)
+**Демо:** [http://tomymind.ru](http://tomymind.ru)
 
 ## Функционал:
 
@@ -58,23 +58,15 @@ bundle exec rake db:seed
 
 ## Документация RESTful JSON API приложения:
 
+**Демо:** [http://tomymind.ru](http://tomymind.ru)
+
 |  Action    |  Method    |  Path    |  Comment    |
 |-------|-------|-------|-------|
-| **List** | GET | /api/v1/users | Просмотр списка пользователей |
-| **Create** | POST | /api/v1/users | Создать нового пользователя |
-| **Read** | GET | /api/v1/users/:id | Просмотр пользователя |
-| **Update** | PATCH, PUT | /api/v1/users/:id | Изменить пользователя |
-| **Delete** | DELETE | /api/v1/users/:id | Удалить пользователя |
-
-
-## ToDo &mdash; что планируется реализовать:
-
-- удалять аватар при удалении профиля
-- если написать существующую в БД почту заглавными, выпадет ошибка (при валидации на уникальность). закончить решение вопроса
-- на демо-сайте (на Heroku) не отображаются фотографии. Выгружать фото на внешний источник (Heroku не хранит фото) 
-- доработать Create and Update в RESTful Json API
-- покрыть важные куски кода тестами
-- сделать индивидуальные title для страниц
+| **List** | GET | /api/v1/users.json | Просмотр списка пользователей |
+| **Create** | POST | /api/v1/users.json | Создать нового пользователя |
+| **Read** | GET | /api/v1/users/:id.json | Просмотр пользователя |
+| **Update** | PATCH, PUT | /api/v1/users/:id.json | Изменить пользователя |
+| **Delete** | DELETE | /api/v1/users/:id.json | Удалить пользователя |
 
 ## Лицензия и автор:
 
