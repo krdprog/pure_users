@@ -19,6 +19,9 @@ gem "mini_magick"
 
 gem 'bcrypt'
 
+gem 'ed25519', '>= 1.2', '< 2.0'
+gem 'bcrypt_pbkdf', '>= 1.0', '< 2.0'
+
 group :production do
   gem 'pg'
 end
