@@ -37,3 +37,6 @@ yarn-debug.log*
 
 # Ignore uploads pictures (from Carrierwave Uploaders)
 /public/uploads
+
+/config/secrets.yml
+/config/database.yml
