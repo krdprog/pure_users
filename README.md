@@ -58,15 +58,23 @@ bundle exec rake db:seed
 
 ## Документация RESTful JSON API приложения:
 
-**Демо:** [http://tomymind.ru](http://tomymind.ru)
+**Демо:** [http://tomymind.ru/api/v1](http://tomymind.ru/api/v1)
+
+```bash
+# GET all users
+$ curl 'http://tomymind.ru/api/v1/users'
+
+# GET user 1
+$ curl 'http://tomymind.ru/api/v1/users/1'
+```
 
 |  Action    |  Method    |  Path    |  Comment    |
 |-------|-------|-------|-------|
-| **List** | GET | /api/v1/users.json | Просмотр списка пользователей |
-| **Create** | POST | /api/v1/users.json | Создать нового пользователя |
-| **Read** | GET | /api/v1/users/:id.json | Просмотр пользователя |
-| **Update** | PATCH, PUT | /api/v1/users/:id.json | Изменить пользователя |
-| **Delete** | DELETE | /api/v1/users/:id.json | Удалить пользователя |
+| **List** | GET | /api/v1/users | Просмотр списка пользователей |
+| **Create** | POST | /api/v1/users | Создать нового пользователя |
+| **Read** | GET | /api/v1/users/:id | Просмотр пользователя |
+| **Update** | PATCH, PUT | /api/v1/users/:id | Изменить пользователя |
+| **Delete** | DELETE | /api/v1/users/:id | Удалить пользователя |
 
 ## Лицензия и автор:
 
