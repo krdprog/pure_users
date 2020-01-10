@@ -58,7 +58,7 @@ bundle exec rake db:seed
 
 ## Документация RESTful JSON API приложения:
 
-**API:** http://tomymind.ru/api/v1
+**API (GET all users):** http://tomymind.ru/api/v1/users.json
 
 ```bash
 # GET all users
