@@ -2,8 +2,6 @@
 
 **PureUsers Panel** &mdash; это панель управления пользователями.
 
-**Демо:** [http://tomymind.ru](http://tomymind.ru)
-
 ## Функционал:
 
 Панель управления позволяет просматривать, создавать, изменять и удалять пользователей.
@@ -58,14 +56,14 @@ bundle exec rake db:seed
 
 ## Документация RESTful JSON API приложения:
 
-**API (GET all users):** http://tomymind.ru/api/v1/users.json
+**API (GET all users):** http://localhost:3000/api/v1/users.json
 
 ```bash
 # GET all users
-$ curl 'http://tomymind.ru/api/v1/users'
+$ curl 'http://localhost:3000/api/v1/users'
 
 # GET user 1
-$ curl 'http://tomymind.ru/api/v1/users/1'
+$ curl 'http://localhost:3000/api/v1/users/1'
 ```
 
 |  Action    |  Method    |  Path    |  Comment    |
