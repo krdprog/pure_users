@@ -135,12 +135,12 @@ GEM
     net-scp (2.0.0)
       net-ssh (>= 2.6.5, < 6.0.0)
     net-ssh (5.2.0)
-    nio4r (2.5.2)
+    nio4r (2.5.8)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
     pg (1.2.1)
     public_suffix (4.0.1)
-    puma (4.3.1)
+    puma (4.3.11)
       nio4r (~> 2.0)
     rack (2.0.8)
     rack-proxy (0.6.5)
@@ -259,7 +259,7 @@ DEPENDENCIES
   listen (>= 3.0.5, < 3.2)
   mini_magick
   pg
-  puma (~> 4.1)
+  puma (~> 4.3)
   rails (~> 6.0.2, >= 6.0.2.1)
   sass-rails (>= 6)
   selenium-webdriver
